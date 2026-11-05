@@ -1,0 +1,42 @@
+/* Earth: ocean blues and forest greens */
+:root {
+  --bg: #04283d;
+  --bg2: #0c5a3a;
+  --accent: #5ad0ff;
+  --head-font: Georgia, serif;
+  --body-font: Verdana, sans-serif;
+}
+
+/* Orbit animation: the arm rotates and carries the Moon dot */
+.orbit-box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 1rem auto;
+  border: 1px dashed var(--accent);
+  border-radius: 50%;
+}
+
+.earth-mini {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90px;
+  transform: translate(-50%, -50%);
+}
+
+.orbit-arm {
+  position: absolute;
+  inset: 0;
+}
+
+.moon-dot {
+  position: absolute;
+  top: -10px;
+  left: calc(50% - 10px);
+  width: 20px;
+  height: 20px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #ffffff;
+}

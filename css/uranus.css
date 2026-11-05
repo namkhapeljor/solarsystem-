@@ -1,0 +1,19 @@
+/* Uranus: icy cyan */
+:root {
+  --bg: #04262e;
+  --bg2: #3fa9b0;
+  --accent: #8ff5f5;
+  --head-font: Verdana, sans-serif;
+  --body-font: Verdana, sans-serif;
+}
+
+/* Box that lets the planet tip over (rotated by JS) */
+.tilt-box {
+  display: flex;
+  justify-content: center;
+}
+
+.tilt-box .planet {
+  transition: transform 0.4s ease;
+  transform: rotate(98deg);
+}

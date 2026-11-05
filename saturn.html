@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saturn | Solar System Tour</title>
+  <!-- shared layout, then this page's own theme -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/saturn.css">
+</head>
+<body class="saturn">
+  <!-- Navigation bar: identical on every page -->
+  <nav class="navbar">
+    <a class="brand" href="index.html">Solar System</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sun.html">Sun</a></li>
+      <li><a href="moon.html">Moon</a></li>
+      <li><a href="earth.html">Earth</a></li>
+      <li><a href="mercury.html">Mercury</a></li>
+      <li><a href="venus.html">Venus</a></li>
+      <li><a href="mars.html">Mars</a></li>
+      <li><a href="jupiter.html">Jupiter</a></li>
+      <li><a href="saturn.html" class="active">Saturn</a></li>
+      <li><a href="uranus.html">Uranus</a></li>
+    </ul>
+  </nav>
+
+  <!-- Title and picture -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Saturn</h1>
+      <p class="intro">The ringed jewel of the solar system. Its icy rings stretch hundreds of thousands of kilometers but are very thin.</p>
+    </div>
+    <div class="hero-visual">
+      <img id="planet-img" class="planet" src="images/saturn.svg" alt="Illustration of Saturn with its bright rings">
+    </div>
+  </header>
+
+  <main>
+    <!-- Facts -->
+    <section class="card">
+      <h2>Saturn Facts</h2>
+      <ul class="facts">
+        <li>Diameter: <strong>116,460 km</strong>.</li>
+        <li>Distance from the Sun: about <strong>1.43 billion km</strong>.</li>
+        <li>One year: about <strong>29.4 Earth years</strong>.</li>
+        <li>One day: about <strong>10 hours 33 minutes</strong>.</li>
+        <li>Cloud top temperature: about <strong>-140 &deg;C</strong>.</li>
+        <li>Moons: <strong>over 140</strong>, including Titan.</li>
+        <li>It is less dense than water, so it would float in a giant bathtub.</li>
+      </ul>
+    </section>
+
+    <!-- JavaScript feature -->
+    <section class="card">
+      <h2>Your Age on Saturn</h2>
+      <p>Enter your age in Earth years.</p>
+      <input id="age" type="number" min="0" placeholder="Age">
+      <button id="age-btn">Convert</button>
+      <p id="age-result" class="output"></p>
+    </section>
+
+    <!-- Second picture -->
+    <section class="card">
+      <h2>How Big Is It?</h2>
+      <figure>
+        <img src="images/saturn-compare.svg" alt="Saturn drawn as a big circle next to a small Earth">
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>Solar System Tour &mdash; CSCI 39548 Project 1</p>
+  </footer>
+
+  <script src="js/saturn.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 200"><circle cx="0" cy="100" r="60" fill="#ffb300"/>
+<circle cx="90" cy="100" r="8" fill="#9a8d80"/><text x="90" y="185" text-anchor="middle" font-family="Arial" font-size="11" fill="#ffffff">Mercury</text>
+<circle cx="124" cy="100" r="14" fill="#e3b765"/><text x="124" y="185" text-anchor="middle" font-family="Arial" font-size="11" fill="#ffffff">Venus</text>
+<circle cx="165" cy="100" r="15" fill="#3b82f6"/><text x="165" y="185" text-anchor="middle" font-family="Arial" font-size="11" fill="#ffffff">Earth</text>
+<circle cx="202" cy="100" r="10" fill="#c1502e"/><text x="202" y="185" text-anchor="middle" font-family="Arial" font-size="11" fill="#ffffff">Mars</text>
+<circle cx="264" cy="100" r="40" fill="#c9a37a"/><text x="264" y="185" text-anchor="middle" font-family="Arial" font-size="11" fill="#ffffff">Jupiter</text>
+<circle cx="350" cy="100" r="34" fill="#e3cf98"/><text x="350" y="185" text-anchor="middle" font-family="Arial" font-size="11" fill="#ffffff">Saturn</text>
+<circle cx="420" cy="100" r="24" fill="#8fe0e3"/><text x="420" y="185" text-anchor="middle" font-family="Arial" font-size="11" fill="#ffffff">Uranus</text>
+</svg>

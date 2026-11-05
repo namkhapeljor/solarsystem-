@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venus | Solar System Tour</title>
+  <!-- shared layout, then this page's own theme -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/venus.css">
+</head>
+<body class="venus">
+  <!-- Navigation bar: identical on every page -->
+  <nav class="navbar">
+    <a class="brand" href="index.html">Solar System</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sun.html">Sun</a></li>
+      <li><a href="moon.html">Moon</a></li>
+      <li><a href="earth.html">Earth</a></li>
+      <li><a href="mercury.html">Mercury</a></li>
+      <li><a href="venus.html" class="active">Venus</a></li>
+      <li><a href="mars.html">Mars</a></li>
+      <li><a href="jupiter.html">Jupiter</a></li>
+      <li><a href="saturn.html">Saturn</a></li>
+      <li><a href="uranus.html">Uranus</a></li>
+    </ul>
+  </nav>
+
+  <!-- Title and picture -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Venus</h1>
+      <p class="intro">Earth's twin in size, but a hellish world wrapped in thick clouds of carbon dioxide and sulfuric acid.</p>
+    </div>
+    <div class="hero-visual">
+      <img id="planet-img" class="planet" src="images/venus.svg" alt="Illustration of cloudy golden Venus">
+    </div>
+  </header>
+
+  <main>
+    <!-- Facts -->
+    <section class="card">
+      <h2>Venus Facts</h2>
+      <ul class="facts">
+        <li>Diameter: <strong>12,104 km</strong>.</li>
+        <li>Distance from the Sun: about <strong>108.2 million km</strong>.</li>
+        <li>One year: <strong>225 Earth days</strong>.</li>
+        <li>One rotation takes <strong>243 Earth days</strong>, longer than its year.</li>
+        <li>Surface temperature: about <strong>465 &deg;C</strong>, the hottest planet.</li>
+        <li>Moons: <strong>0</strong>.</li>
+        <li>Atmosphere is about <strong>96% carbon dioxide</strong>.</li>
+      </ul>
+    </section>
+
+    <!-- JavaScript feature -->
+    <section class="card">
+      <h2>Fun Facts Pop-up</h2>
+      <p>Click to open a pop-up with a random fun fact.</p>
+      <button id="open-btn">Show a fun fact</button>
+      <dialog id="fact-dialog">
+        <h3>Venus Fun Fact</h3>
+        <p id="dialog-text"></p>
+        <button id="close-btn">Close</button>
+      </dialog>
+    </section>
+
+    <!-- Second picture -->
+    <section class="card">
+      <h2>How Big Is It?</h2>
+      <figure>
+        <img src="images/venus-compare.svg" alt="Venus and Earth drawn at almost the same size">
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>Solar System Tour &mdash; CSCI 39548 Project 1</p>
+  </footer>
+
+  <script src="js/venus.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+/* Venus: thick golden-yellow clouds */
+:root {
+  --bg: #3b1f00;
+  --bg2: #b8802c;
+  --accent: #ffd98a;
+  --head-font: Georgia, serif;
+  --body-font: Georgia, serif;
+}
+
+.venus .hero-text h1 {
+  text-shadow: 0 0 25px #ffb347;
+}

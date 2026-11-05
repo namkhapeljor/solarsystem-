@@ -1,0 +1,228 @@
+/* ===== Shared layout for every page =====
+   Each page's theme file (css/<page>.css) overrides the variables below. */
+:root {
+  --bg: #000;
+  --bg2: #111;
+  --text: #ffffff;
+  --accent: #88aaff;
+  --card: rgba(0, 0, 0, 0.55);
+  --head-font: Arial, sans-serif;
+  --body-font: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--text);
+  background: linear-gradient(var(--bg), var(--bg2)) fixed;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: var(--head-font);
+  color: var(--accent);
+}
+
+/* ----- Navigation bar ----- */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.5rem;
+  padding: 0.7rem 1.2rem;
+  background: rgba(0, 0, 0, 0.88);
+  border-bottom: 2px solid var(--accent);
+}
+
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.8rem;
+  list-style: none;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.2rem 0.55rem;
+  border-radius: 6px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  background: var(--accent);
+  color: #000000;
+}
+
+.navbar .brand {
+  font-weight: bold;
+  color: var(--accent);
+}
+
+/* ----- Hero (title + picture) ----- */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 1rem;
+}
+
+.hero-text {
+  flex: 1 1 320px;
+}
+
+.hero-text h1 {
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+}
+
+.intro {
+  margin-top: 0.8rem;
+  font-size: 1.15rem;
+}
+
+.hero-visual {
+  flex: 0 1 380px;
+  text-align: center;
+}
+
+.planet {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+}
+
+/* ----- Content cards ----- */
+main {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 3rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--accent);
+  border-radius: 14px;
+  padding: 1.5rem;
+}
+
+.card h2 {
+  margin-bottom: 0.8rem;
+}
+
+.facts {
+  padding-left: 1.3rem;
+}
+
+.facts li {
+  margin: 0.4rem 0;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-style: italic;
+}
+
+/* ----- Buttons and inputs used by the JS features ----- */
+button {
+  font: inherit;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem 0.3rem 0.3rem 0;
+  background: var(--accent);
+  color: #000000;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.15);
+}
+
+input {
+  font: inherit;
+  width: 10rem;
+  padding: 0.5rem;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+}
+
+input[type="range"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 0;
+}
+
+.output {
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+dialog {
+  max-width: 420px;
+  margin: auto;
+  padding: 1.5rem;
+  color: var(--text);
+  background: #111111;
+  border: 2px solid var(--accent);
+  border-radius: 12px;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+footer {
+  padding: 1.5rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* ----- Animations (JS switches animation-play-state) ----- */
+.anim {
+  animation-play-state: paused;
+}
+
+.spin {
+  animation: spin 20s linear infinite;
+}
+
+.pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.orbit {
+  animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 20px #ffb300); }
+  50% { transform: scale(1.06); filter: drop-shadow(0 0 60px #ffdd55); }
+}

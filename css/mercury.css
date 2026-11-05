@@ -1,0 +1,12 @@
+/* Mercury: dusty gray-brown rock */
+:root {
+  --bg: #1c1814;
+  --bg2: #5a5046;
+  --accent: #d3bfa8;
+  --head-font: "Lucida Console", Monaco, monospace;
+  --body-font: "Lucida Console", Monaco, monospace;
+}
+
+.mercury .card {
+  border-style: dashed;
+}

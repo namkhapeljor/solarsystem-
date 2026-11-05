@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 290">
+  <circle cx="125" cy="125" r="110" fill="#3b82f6"/>
+  <circle cx="370" cy="125" r="30.0" fill="#bdbdbd"/>
+  <text x="125" y="268" text-anchor="middle" font-family="Arial" font-size="18" fill="#ffffff">Earth</text>
+  <text x="370" y="268" text-anchor="middle" font-family="Arial" font-size="18" fill="#ffffff">Moon</text>
+  <text x="240" y="20" text-anchor="middle" font-family="Arial" font-size="16" fill="#ffffff">Earth is about 3.7x wider than the Moon</text>
+</svg>

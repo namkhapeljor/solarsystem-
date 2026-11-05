@@ -1,0 +1,16 @@
+/* Saturn: pale gold and ring-tan */
+:root {
+  --bg: #2e2716;
+  --bg2: #a68f4f;
+  --accent: #f3dc90;
+  --head-font: Garamond, Georgia, serif;
+  --body-font: Garamond, Georgia, serif;
+}
+
+.saturn .hero-text h1 {
+  letter-spacing: 4px;
+}
+
+.saturn body, .saturn p {
+  font-size: 1.05rem;
+}

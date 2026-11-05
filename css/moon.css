@@ -1,0 +1,48 @@
+/* Moon: quiet grays, typewriter-style font */
+:root {
+  --bg: #0d0d0f;
+  --bg2: #3b3b40;
+  --accent: #d0d0d8;
+  --head-font: "Courier New", monospace;
+  --body-font: "Courier New", monospace;
+}
+
+/* Wrapper that lets the phase shadow sit on top of the Moon picture */
+.moon-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.moon-wrap .planet {
+  display: block;
+  max-width: 100%;
+}
+
+/* The dark circle that hides part of the Moon (moved by JS) */
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #05050a;
+  border-radius: 50%;
+  transform: translateX(-100%);
+}
+
+.shadow.half-left {
+  width: 50%;
+  border-radius: 0;
+  transform: none;
+}
+
+.shadow.half-right {
+  left: 50%;
+  width: 50%;
+  border-radius: 0;
+  transform: none;
+}

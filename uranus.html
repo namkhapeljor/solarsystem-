@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uranus | Solar System Tour</title>
+  <!-- shared layout, then this page's own theme -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/uranus.css">
+</head>
+<body class="uranus">
+  <!-- Navigation bar: identical on every page -->
+  <nav class="navbar">
+    <a class="brand" href="index.html">Solar System</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sun.html">Sun</a></li>
+      <li><a href="moon.html">Moon</a></li>
+      <li><a href="earth.html">Earth</a></li>
+      <li><a href="mercury.html">Mercury</a></li>
+      <li><a href="venus.html">Venus</a></li>
+      <li><a href="mars.html">Mars</a></li>
+      <li><a href="jupiter.html">Jupiter</a></li>
+      <li><a href="saturn.html">Saturn</a></li>
+      <li><a href="uranus.html" class="active">Uranus</a></li>
+    </ul>
+  </nav>
+
+  <!-- Title and picture -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Uranus</h1>
+      <p class="intro">The sideways planet. An ice giant that rolls around the Sun tipped over on its side.</p>
+    </div>
+    <div class="hero-visual">
+      <div class="tilt-box"><img id="planet-img" class="planet" src="images/uranus.svg" alt="Illustration of pale blue Uranus with thin rings"></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Facts -->
+    <section class="card">
+      <h2>Uranus Facts</h2>
+      <ul class="facts">
+        <li>Diameter: <strong>50,724 km</strong>.</li>
+        <li>Distance from the Sun: about <strong>2.87 billion km</strong>.</li>
+        <li>One year: about <strong>84 Earth years</strong>.</li>
+        <li>One day: about <strong>17 hours 14 minutes</strong>.</li>
+        <li>Its axis is tilted about <strong>98 degrees</strong>.</li>
+        <li>Coldest atmosphere of any planet: about <strong>-224 &deg;C</strong>.</li>
+        <li>Moons: <strong>28</strong> known. It also has <strong>13 rings</strong>.</li>
+      </ul>
+    </section>
+
+    <!-- JavaScript feature -->
+    <section class="card">
+      <h2>Axial Tilt Slider</h2>
+      <p>Earth is tilted 23.5 degrees. Uranus is tilted 98. Tilt the planet above.</p>
+      <label for="tilt">Tilt: <span id="tilt-value">98</span>&deg;</label><br>
+      <input id="tilt" type="range" min="0" max="98" value="98">
+      <br>
+      <button id="earth-btn">Earth tilt</button>
+      <button id="uranus-btn">Uranus tilt</button>
+    </section>
+
+    <!-- Second picture -->
+    <section class="card">
+      <h2>How Big Is It?</h2>
+      <figure>
+        <img src="images/uranus-compare.svg" alt="Uranus drawn as a circle four times wider than Earth">
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>Solar System Tour &mdash; CSCI 39548 Project 1</p>
+  </footer>
+
+  <script src="js/uranus.js"></script>
+</body>
+</html>

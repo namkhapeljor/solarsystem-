@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Earth | Solar System Tour</title>
+  <!-- shared layout, then this page's own theme -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/earth.css">
+</head>
+<body class="earth">
+  <!-- Navigation bar: identical on every page -->
+  <nav class="navbar">
+    <a class="brand" href="index.html">Solar System</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sun.html">Sun</a></li>
+      <li><a href="moon.html">Moon</a></li>
+      <li><a href="earth.html" class="active">Earth</a></li>
+      <li><a href="mercury.html">Mercury</a></li>
+      <li><a href="venus.html">Venus</a></li>
+      <li><a href="mars.html">Mars</a></li>
+      <li><a href="jupiter.html">Jupiter</a></li>
+      <li><a href="saturn.html">Saturn</a></li>
+      <li><a href="uranus.html">Uranus</a></li>
+    </ul>
+  </nav>
+
+  <!-- Title and picture -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Earth</h1>
+      <p class="intro">Our home. The only place we know of that has life, liquid oceans on the surface, and a protective atmosphere.</p>
+    </div>
+    <div class="hero-visual">
+      <img id="planet-img" class="planet" src="images/earth.svg" alt="Illustration of Earth with blue oceans and green continents">
+    </div>
+  </header>
+
+  <main>
+    <!-- Facts -->
+    <section class="card">
+      <h2>Earth Facts</h2>
+      <ul class="facts">
+        <li>Diameter: <strong>12,742 km</strong>.</li>
+        <li>Distance from the Sun: about <strong>149.6 million km</strong>.</li>
+        <li>One day: <strong>24 hours</strong>. One year: <strong>365.25 days</strong>.</li>
+        <li>Moons: <strong>1</strong>.</li>
+        <li>Average surface temperature: about <strong>15 &deg;C</strong>.</li>
+        <li>About <strong>71%</strong> of the surface is covered by water.</li>
+        <li>It is the <strong>densest</strong> planet in the solar system.</li>
+      </ul>
+    </section>
+
+    <!-- JavaScript feature -->
+    <section class="card">
+      <h2>Orbiting Moon</h2>
+      <p>Watch the Moon circle the Earth.</p>
+      <div class="orbit-box">
+        <img class="earth-mini" src="images/earth.svg" alt="Small Earth at the center of the orbit animation">
+        <div id="orbit-arm" class="orbit-arm anim orbit"><span class="moon-dot"></span></div>
+      </div>
+      <button id="start-btn">Start</button>
+      <button id="stop-btn">Stop</button>
+    </section>
+
+    <!-- Second picture -->
+    <section class="card">
+      <h2>How Big Is It?</h2>
+      <figure>
+        <img src="images/earth-compare.svg" alt="Earth drawn as a large circle next to the smaller Moon">
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>Solar System Tour &mdash; CSCI 39548 Project 1</p>
+  </footer>
+
+  <script src="js/earth.js"></script>
+</body>
+</html>

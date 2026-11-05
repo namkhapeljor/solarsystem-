@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="g" cx="35%" cy="30%" r="80%"><stop offset="0" stop-color="#f0e3b8"/><stop offset="1" stop-color="#a8904f"/></radialGradient>
+    <radialGradient id="shade" cx="35%" cy="30%" r="75%"><stop offset="0.55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.55"/></radialGradient>
+    <clipPath id="c"><circle cx="200" cy="200" r="150"/></clipPath>
+    <filter id="blur"><feGaussianBlur stdDeviation="14"/></filter>
+  </defs>
+  <g transform="rotate(-18 200 200)"><ellipse cx="200" cy="200" rx="205" ry="48" fill="none" stroke="#d9c48a" stroke-width="20" opacity="0.85"/></g>
+  <circle cx="200" cy="200" r="150" fill="url(#g)"/>
+  <g clip-path="url(#c)"><rect x="40" y="70" width="320" height="26" fill="#e8d9a8" opacity="0.75"/><rect x="40" y="96" width="320" height="26" fill="#cdb878" opacity="0.75"/><rect x="40" y="122" width="320" height="26" fill="#f0e3b8" opacity="0.75"/><rect x="40" y="148" width="320" height="26" fill="#c2a86a" opacity="0.75"/><rect x="40" y="174" width="320" height="26" fill="#e5d29c" opacity="0.75"/><rect x="40" y="200" width="320" height="26" fill="#d3bd82" opacity="0.75"/><rect x="40" y="226" width="320" height="26" fill="#efe0b0" opacity="0.75"/><rect x="40" y="252" width="320" height="26" fill="#bfa564" opacity="0.75"/><rect x="40" y="278" width="320" height="26" fill="#e2cf98" opacity="0.75"/><rect x="40" y="304" width="320" height="26" fill="#cdb678" opacity="0.75"/></g>
+  <circle cx="200" cy="200" r="150" fill="url(#shade)"/>
+  <g transform="rotate(-18 200 200)"><path d="M -5 200 A 205 48 0 0 0 405 200" fill="none" stroke="#d9c48a" stroke-width="20" opacity="0.95"/></g>
+</svg>

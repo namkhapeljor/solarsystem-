@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="g" cx="35%" cy="30%" r="80%"><stop offset="0" stop-color="#e6e6e6"/><stop offset="1" stop-color="#8a8a8a"/></radialGradient>
+    <radialGradient id="shade" cx="35%" cy="30%" r="75%"><stop offset="0.55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.55"/></radialGradient>
+    <clipPath id="c"><circle cx="200" cy="200" r="150"/></clipPath>
+    <filter id="blur"><feGaussianBlur stdDeviation="14"/></filter>
+  </defs>
+  <circle cx="200" cy="200" r="150" fill="url(#g)"/>
+  <g clip-path="url(#c)"><circle cx="150" cy="140" r="28" fill="#000" opacity="0.25"/><circle cx="250" cy="110" r="18" fill="#000" opacity="0.25"/><circle cx="240" cy="230" r="34" fill="#000" opacity="0.25"/><circle cx="140" cy="250" r="16" fill="#000" opacity="0.25"/><circle cx="300" cy="180" r="12" fill="#000" opacity="0.25"/><circle cx="190" cy="190" r="10" fill="#000" opacity="0.25"/></g>
+  <circle cx="200" cy="200" r="150" fill="url(#shade)"/>
+</svg>

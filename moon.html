@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Moon | Solar System Tour</title>
+  <!-- shared layout, then this page's own theme -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/moon.css">
+</head>
+<body class="moon">
+  <!-- Navigation bar: identical on every page -->
+  <nav class="navbar">
+    <a class="brand" href="index.html">Solar System</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sun.html">Sun</a></li>
+      <li><a href="moon.html" class="active">Moon</a></li>
+      <li><a href="earth.html">Earth</a></li>
+      <li><a href="mercury.html">Mercury</a></li>
+      <li><a href="venus.html">Venus</a></li>
+      <li><a href="mars.html">Mars</a></li>
+      <li><a href="jupiter.html">Jupiter</a></li>
+      <li><a href="saturn.html">Saturn</a></li>
+      <li><a href="uranus.html">Uranus</a></li>
+    </ul>
+  </nav>
+
+  <!-- Title and picture -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>The Moon</h1>
+      <p class="intro">Earth's only natural satellite. It controls our tides and is the only other world humans have walked on.</p>
+    </div>
+    <div class="hero-visual">
+      <div class="moon-wrap"><img id="planet-img" class="planet" src="images/moon.svg" alt="Illustration of the cratered Moon"><div id="shadow" class="shadow"></div></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Facts -->
+    <section class="card">
+      <h2>Moon Facts</h2>
+      <ul class="facts">
+        <li>Diameter: <strong>3,474 km</strong>, about a quarter of Earth's.</li>
+        <li>Average distance from Earth: <strong>384,400 km</strong>.</li>
+        <li>One orbit around Earth takes <strong>27.3 days</strong>.</li>
+        <li>Gravity is only <strong>16.5%</strong> of Earth's.</li>
+        <li>Temperatures swing from about <strong>-173 &deg;C to 127 &deg;C</strong>.</li>
+        <li>It is <strong>tidally locked</strong>, so we always see the same side.</li>
+        <li>Apollo 11 landed the first humans here in <strong>1969</strong>.</li>
+      </ul>
+    </section>
+
+    <!-- JavaScript feature -->
+    <section class="card">
+      <h2>Moon Phase Viewer</h2>
+      <p>Pick a phase and watch the Moon above change.</p>
+      <div id="phase-buttons"></div>
+      <p id="phase-name" class="output">Full Moon</p>
+    </section>
+
+    <!-- Second picture -->
+    <section class="card">
+      <h2>How Big Is It?</h2>
+      <figure>
+        <img src="images/moon-compare.svg" alt="The Moon drawn as a small circle next to the larger Earth">
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>Solar System Tour &mdash; CSCI 39548 Project 1</p>
+  </footer>
+
+  <script src="js/moon.js"></script>
+</body>
+</html>

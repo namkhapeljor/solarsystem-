@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jupiter | Solar System Tour</title>
+  <!-- shared layout, then this page's own theme -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jupiter.css">
+</head>
+<body class="jupiter">
+  <!-- Navigation bar: identical on every page -->
+  <nav class="navbar">
+    <a class="brand" href="index.html">Solar System</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sun.html">Sun</a></li>
+      <li><a href="moon.html">Moon</a></li>
+      <li><a href="earth.html">Earth</a></li>
+      <li><a href="mercury.html">Mercury</a></li>
+      <li><a href="venus.html">Venus</a></li>
+      <li><a href="mars.html">Mars</a></li>
+      <li><a href="jupiter.html" class="active">Jupiter</a></li>
+      <li><a href="saturn.html">Saturn</a></li>
+      <li><a href="uranus.html">Uranus</a></li>
+    </ul>
+  </nav>
+
+  <!-- Title and picture -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Jupiter</h1>
+      <p class="intro">The king of the planets. A gas giant so big that every other planet could fit inside it.</p>
+    </div>
+    <div class="hero-visual">
+      <img id="planet-img" class="planet anim spin" src="images/jupiter.svg" alt="Illustration of Jupiter with cloud bands and the Great Red Spot">
+    </div>
+  </header>
+
+  <main>
+    <!-- Facts -->
+    <section class="card">
+      <h2>Jupiter Facts</h2>
+      <ul class="facts">
+        <li>Diameter: <strong>139,820 km</strong>, the largest planet.</li>
+        <li>Distance from the Sun: about <strong>778.5 million km</strong>.</li>
+        <li>One year: about <strong>11.9 Earth years</strong>.</li>
+        <li>One day: just <strong>9 hours 56 minutes</strong>.</li>
+        <li>Cloud top temperature: about <strong>-110 &deg;C</strong>.</li>
+        <li>Moons: <strong>more than 90</strong>, including Ganymede, the biggest moon in the solar system.</li>
+        <li>The Great Red Spot is a storm bigger than Earth.</li>
+      </ul>
+    </section>
+
+    <!-- JavaScript feature -->
+    <section class="card">
+      <h2>Spin Speed Control</h2>
+      <p>Jupiter spins fast. Change how fast with the slider.</p>
+      <label for="speed">Seconds per spin: <span id="speed-value">20</span></label><br>
+      <input id="speed" type="range" min="2" max="40" value="20">
+    </section>
+
+    <!-- Second picture -->
+    <section class="card">
+      <h2>How Big Is It?</h2>
+      <figure>
+        <img src="images/jupiter-compare.svg" alt="Jupiter drawn as a huge circle next to a small Earth">
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>Solar System Tour &mdash; CSCI 39548 Project 1</p>
+  </footer>
+
+  <script src="js/jupiter.js"></script>
+</body>
+</html>

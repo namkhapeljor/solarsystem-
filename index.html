@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to the Solar System | Solar System Tour</title>
+  <!-- shared layout, then this page's own theme -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="index">
+  <!-- Navigation bar: identical on every page -->
+  <nav class="navbar">
+    <a class="brand" href="index.html">Solar System</a>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="sun.html">Sun</a></li>
+      <li><a href="moon.html">Moon</a></li>
+      <li><a href="earth.html">Earth</a></li>
+      <li><a href="mercury.html">Mercury</a></li>
+      <li><a href="venus.html">Venus</a></li>
+      <li><a href="mars.html">Mars</a></li>
+      <li><a href="jupiter.html">Jupiter</a></li>
+      <li><a href="saturn.html">Saturn</a></li>
+      <li><a href="uranus.html">Uranus</a></li>
+    </ul>
+  </nav>
+
+  <!-- Title and picture -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Our Solar System</h1>
+      <p class="intro">Eight planets, one star, hundreds of moons, and billions of years of history. Pick a world from the menu above and start exploring.</p>
+    </div>
+    <div class="hero-visual">
+      <img id="planet-img" class="planet" src="images/lineup.svg" alt="Lineup of the Sun and the planets from Mercury to Uranus">
+    </div>
+  </header>
+
+  <main>
+    <!-- Facts -->
+    <section class="card">
+      <h2>Solar System Quick Facts</h2>
+      <ul class="facts">
+        <li>The solar system formed about <strong>4.6 billion years ago</strong>.</li>
+        <li>It has <strong>8 planets</strong>: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune.</li>
+        <li>The Sun holds <strong>99.86%</strong> of all the mass in the solar system.</li>
+        <li>Light from the Sun takes about <strong>8 minutes 20 seconds</strong> to reach Earth.</li>
+        <li>The four inner planets are rocky; the four outer planets are gas or ice giants.</li>
+        <li>Between Mars and Jupiter lies the <strong>asteroid belt</strong>.</li>
+      </ul>
+    </section>
+
+    <!-- JavaScript feature -->
+    <section class="card">
+      <h2>Random Space Fact</h2>
+      <p>Click the button to learn something new.</p>
+      <button id="fact-btn">Show me a fact</button>
+      <p id="fact-output" class="output"></p>
+    </section>
+
+    <!-- Second picture -->
+    <section class="card">
+      <h2>How the Planets Orbit</h2>
+      <figure>
+        <img src="images/orbits.svg" alt="Diagram of the eight planets orbiting the Sun in circles">
+        <figcaption>Every planet travels around the Sun on its own path (not to scale).</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>Solar System Tour &mdash; CSCI 39548 Project 1</p>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+</html>

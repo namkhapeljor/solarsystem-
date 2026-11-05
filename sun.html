@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Sun | Solar System Tour</title>
+  <!-- shared layout, then this page's own theme -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/sun.css">
+</head>
+<body class="sun">
+  <!-- Navigation bar: identical on every page -->
+  <nav class="navbar">
+    <a class="brand" href="index.html">Solar System</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sun.html" class="active">Sun</a></li>
+      <li><a href="moon.html">Moon</a></li>
+      <li><a href="earth.html">Earth</a></li>
+      <li><a href="mercury.html">Mercury</a></li>
+      <li><a href="venus.html">Venus</a></li>
+      <li><a href="mars.html">Mars</a></li>
+      <li><a href="jupiter.html">Jupiter</a></li>
+      <li><a href="saturn.html">Saturn</a></li>
+      <li><a href="uranus.html">Uranus</a></li>
+    </ul>
+  </nav>
+
+  <!-- Title and picture -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>The Sun</h1>
+      <p class="intro">The star at the center of it all. Its gravity holds the solar system together and its light powers life on Earth.</p>
+    </div>
+    <div class="hero-visual">
+      <img id="planet-img" class="planet anim pulse" src="images/sun.svg" alt="Illustration of the glowing Sun">
+    </div>
+  </header>
+
+  <main>
+    <!-- Facts -->
+    <section class="card">
+      <h2>Sun Facts</h2>
+      <ul class="facts">
+        <li>Diameter: about <strong>1,391,000 km</strong> (109 times Earth).</li>
+        <li>Surface temperature: about <strong>5,500 &deg;C</strong>.</li>
+        <li>Core temperature: about <strong>15 million &deg;C</strong>.</li>
+        <li>Age: roughly <strong>4.6 billion years</strong>.</li>
+        <li>Type: a <strong>G-type main-sequence star</strong>, often called a yellow dwarf.</li>
+        <li>It holds <strong>99.86%</strong> of the solar system's mass.</li>
+        <li>Its light takes <strong>8 min 20 s</strong> to reach Earth.</li>
+      </ul>
+    </section>
+
+    <!-- JavaScript feature -->
+    <section class="card">
+      <h2>Make the Sun Pulse</h2>
+      <p>Start or stop the glowing animation.</p>
+      <button id="start-btn">Start</button>
+      <button id="stop-btn">Stop</button>
+    </section>
+
+    <!-- Second picture -->
+    <section class="card">
+      <h2>How Big Is It?</h2>
+      <figure>
+        <img src="images/sun-compare.svg" alt="The Sun drawn as a huge circle next to a tiny dot for Earth">
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>Solar System Tour &mdash; CSCI 39548 Project 1</p>
+  </footer>
+
+  <script src="js/sun.js"></script>
+</body>
+</html>

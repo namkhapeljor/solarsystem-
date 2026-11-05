@@ -1,0 +1,14 @@
+/* Mars: rusty red desert */
+:root {
+  --bg: #260b05;
+  --bg2: #8a2f12;
+  --accent: #ff7a4a;
+  --head-font: "Arial Black", Impact, sans-serif;
+  --body-font: "Trebuchet MS", Arial, sans-serif;
+}
+
+#more-text {
+  margin-top: 0.8rem;
+  padding: 0.8rem;
+  border-left: 4px solid var(--accent);
+}

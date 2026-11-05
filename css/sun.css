@@ -1,0 +1,13 @@
+/* Sun: fiery oranges and yellows */
+:root {
+  --bg: #2a0800;
+  --bg2: #b34700;
+  --accent: #ffd000;
+  --head-font: Impact, "Arial Black", sans-serif;
+  --body-font: "Trebuchet MS", Arial, sans-serif;
+}
+
+.sun .hero-text h1 {
+  text-shadow: 0 0 20px #ff6a00;
+  letter-spacing: 3px;
+}
